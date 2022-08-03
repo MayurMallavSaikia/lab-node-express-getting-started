@@ -10,8 +10,8 @@
 let express=require('express')                              // express server
 let app=express()
 
-app.get('/express', function(req,res){
+app.get('/', function(req,res){
 
-    res.send('<h1>Hello Express Server !!</h1><br><a href="/express">Click to see Node Server results</a>')
+    res.send('<h1>Hello Express Server !!</h1><br><a href="https://createnode.herokuapp.com/">Click to see Node Server results</a>')
 })
 app.listen(process.env.PORT || 8050,()=>{console.log('Express Server running at port 8050')})
