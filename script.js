@@ -1,6 +1,6 @@
 let http=require('http')                                        // Node Server
 http.createServer(function(req,res){
-    res.write('<h1>Hello Node Server !!</h1><br><a href="progradexpress.herokuapp.com/express">Click to see Express Server results</a>')
+    res.write('<h1>Hello Node Server !!</h1><br><a href="/express">Click to see Express Server results</a>')
     res.end()
      
 }).listen(process.env.PORT || 8000,()=>{console.log('Node Server running at the port 8000')})
